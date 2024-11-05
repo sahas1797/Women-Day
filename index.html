@@ -47,7 +47,7 @@
 
 
         <div class="right">
-            
+
         </div>
 
 
@@ -59,7 +59,7 @@
         <div class="img-with-text__media">
             <img src="utils/one.jpg" alt="" />
         </div>
-        
+
         <div class="img-with-text__text-container">
             <h3 class="img-with-text__pretitle">
                 Get involved for
@@ -146,9 +146,9 @@
                             <h3>Sofia Nick</h3>
                             <p>Singapore</p>
                             <div class="carousel-social-media">
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-dribbble"></i>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a><i class="fa-brands fa-twitter"></i></a>
+                                <a><i class="fa-brands fa-dribbble"></i></a>
                             </div>
                         </div>
                     </div>
@@ -162,9 +162,9 @@
                             <h3>Alicia Stoke</h3>
                             <p>London</p>
                             <div class="carousel-social-media">
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-dribbble"></i>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
                             </div>
                         </div>
                     </div>
@@ -177,9 +177,9 @@
                             <h3>Lisa Waren</h3>
                             <p>Sydney</p>
                             <div class="carousel-social-media">
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-dribbble"></i>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
                             </div>
                         </div>
                     </div>
@@ -192,9 +192,9 @@
                             <h3>Sofia Nick</h3>
                             <p>Singapore</p>
                             <div class="carousel-social-media">
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-dribbble"></i>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
                             </div>
                         </div>
                     </div>
@@ -419,6 +419,22 @@
 
 
 
+
+
+
+        /*BACK TO TOP Visibility control*/
+
+        const backToTopButton = document.getElementById('backtoTop');
+        const firstSection = document.querySelector('.img-with-text'); // Adjust selector to target your first section
+
+        window.addEventListener('scroll', () => {
+            const sectionHeight = firstSection.offsetHeight;
+            if (window.scrollY > sectionHeight) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
 
 
 

@@ -232,7 +232,7 @@ body {
 }
 
 .speaker-container {
-    margin: 0px 150px;
+    margin: auto;
     padding: 0px 15px;
 
 
@@ -240,7 +240,7 @@ body {
 
 .content-text {
     text-align: center !important;
-    margin: 0px 0px 48px;
+    margin: 0px 0px 0px;
     color: #222;
 
 
@@ -276,12 +276,13 @@ body {
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    gap:20px
 }
 
 .carousel-slide {
     min-width: 33.33%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -326,15 +327,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4px 0px 0px;
+    margin: 6px 0px 0px;
 }
 
-.carousel-social-media i {
-    padding: 9px 0px;
-    margin: 0 10px;
+.carousel-social-media a {
+    padding: 9px; 
+    margin: 0px 0px;
     color: rgb(0, 0, 0);
     font-size: 15px;
+    display: inline-block; 
+    border-radius: 50%;    
+    text-align: center;     
+    transition: background-color 0.9s, color 0.3s;  
 }
+
+.carousel-social-media a:nth-child(1):hover {
+    background-color: rgb(70, 70, 250);
+    color:white;
+}
+
+.carousel-social-media a:nth-child(2):hover {
+    background-color: rgb(73, 192, 240);
+    color:white;
+}
+
+.carousel-social-media a:nth-child(3):hover {
+    background-color: rgb(247, 138, 223);
+    color:white;
+}
+
 
 
 
@@ -638,6 +659,7 @@ body {
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    display: none;
 
     i {
         color: rgb(236, 236, 236);
